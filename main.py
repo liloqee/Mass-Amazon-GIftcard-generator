@@ -20,7 +20,7 @@ text = '''
 '''
 
 def gen(fix, amount):
-    while fix <= amount:
+    while fix <= amount:50
         code = ('').join(random.choices(string.ascii_letters.upper() + string.digits.upper(), k=13))
         f.write(code.upper() + '\n')
         print(Fore.GREEN + code.upper())
@@ -34,3 +34,5 @@ print(Fore.RED + 'Enter amount of codes to generate: ')
 amount = int(input())
 gen(1, amount)
 time.sleep(2)
+
+
